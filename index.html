@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts & Comments</title>
+    <style>
+        .deleted { text-decoration: line-through; color: gray; }
+        .post { border: 1px solid #ccc; margin: 10px; padding: 10px; }
+        .comment { margin-left: 20px; padding: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Posts</h1>
+    <div>
+        <input id="postTitle" placeholder="Title">
+        <input id="postViews" placeholder="Views" type="number">
+        <button onclick="createPost()">Add Post</button>
+    </div>
+    <div id="posts"></div>
+
+    <h2>Comments</h2>
+    <div>
+        <input id="commentText" placeholder="Comment text">
+        <input id="commentPostId" placeholder="Post ID">
+        <button onclick="createComment()">Add Comment</button>
+    </div>
+    <div id="comments"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
